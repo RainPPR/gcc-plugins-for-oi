@@ -1,5 +1,5 @@
-HOST_CXX = g++-14
-TARGET_GCC = gcc-14
+HOST_CXX = g++-9
+TARGET_GCC = gcc-9
 GCCPLUGINS_DIR := $(shell $(TARGET_GCC) -print-file-name=plugin)
 CXXFLAGS += -I$(GCCPLUGINS_DIR)/include -I$(GCCPLUGINS_DIR)/plugin/include -fPIC -fno-rtti -O2
 
