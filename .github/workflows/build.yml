@@ -17,7 +17,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo apt install -y gcc-14 gcc-14-plugin-dev
+        sudo apt install -y gcc-9 gcc-9-plugin-dev
 
     - name: Config Git
       run: |
