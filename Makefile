@@ -1,7 +1,7 @@
 HOST_CXX = g++
 TARGET_GCC = gcc
 GCCPLUGINS_DIR := $(shell $(TARGET_GCC) -print-file-name=plugin)
-CXXFLAGS += -I$(GCCPLUGINS_DIR)/include -fPIC -fno-rtti -O2
+CXXFLAGS += -I$(GCCPLUGINS_DIR)/include -I$(GCCPLUGINS_DIR)/plugin/include -fPIC -fno-rtti -O2
 
 all: no_opt_attr_plugin.so
 
